@@ -77,7 +77,7 @@ function emotesequip(item)
 	end
 end
 
-function ShopFrame.new(item, description, image, typeofprice, price, category, subcat, Name, onsale, ugc)
+function ShopFrame.new(item, description, image, typeofprice, price, category, subcat, Name, onsale, ugc) -- the reason for this many variables is because its looping trough the items in a different script and passing the itemsinfo trough the params
 	local self = {} :: self
 	self.Name = Name
 	self.Frame = game.ReplicatedStorage.ShopItems.Frame:Clone()
